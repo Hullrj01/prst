@@ -1,21 +1,6 @@
-/*relative positioning {position: relative;} does not affect any other elements of screen, useful for
-partially layering/overlap imgs. Target element is moved visually, but it's default rendering is left
-behind (ghost element). displayed relative to its default.*/
-/*absolute positioning {position: absolute;} positions target relative to its parent element*/
-/* {position: fixed;}keeps target in same position as you scroll*/
-
-#myjob{
-  margin-top: 0px;
-  visibility: hidden;
-}
-
-#myjob2{
-  margin: 0px;
-}
-
 .top {
-  background-color: #EBFFFA;
-  padding:
+  background-color: #EAF6F6;
+  height: 435px;
 }
 
 .mid {
@@ -23,7 +8,10 @@ behind (ghost element). displayed relative to its default.*/
 }
 
 .bot {
-
+  background-color: #66BFBF;
+  margin-top: 35px;
+  padding-bottom: 40px;
+  height: 50px;
 }
 
 .web {
@@ -32,34 +20,137 @@ behind (ghost element). displayed relative to its default.*/
 
 .beer {
   position: relative;
-  left: 275px;
-  bottom: 305px;
+  left: 330px;
+  bottom: 350px;
   transform: rotate(-25deg);
 }
 
-.wave{
+.wave {
   position: relative;
-  right:70px;
+  right: 70px;
+  width: 250px;
+  bottom: 80px;
 }
 
 .surf {
   position: relative;
-  right: 150px;
-  top: 100px;
+  right: 200px;
+  top: 75px;
+}
+
+.skill-row {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+.Sales {
+  margin-bottom: 30px;
+  margin-right: 30px;
+  float: left;
+}
+
+.cooking {
+  margin-bottom: 30px;
+  float: right;
+  /* FLOAT can be easily abused as a cheap positioner. try to avoid this and use relative/absolute. less bugs overall */
+  margin-left: 30px;
+}
+
+#cook {
+  text-align: right;
+}
+
+.code {
+  margin-right: 30px;
+  float: left;
 }
 
 body {
   text-align: center;
   font-family: 'Merriweather Sans', sans-serif;
-    background-color: #EBFFFA;
+  margin: 0px;
+  color: #40514E;
+}
+p{
+  line-height: 2;
 }
 
 h1 {
-  margin-bottom: 0px;
+  margin: 0 auto 0 auto;
   font-family: 'Sacramento', cursive;
-  font-size: 50px;
+  font-size: 75px;
+  color: #66BFBF;
+  line-height: 2;
+  position: relative;
+  bottom: 50px;
+
+}
+#title {
+  margin: 0px;
+  position: relative;
+  bottom: 75px;
+}
+.profile{
+  margin-bottom: 40px;
 }
 
-h2{
+.bio{
+  width: 30%;
+  margin: auto;
+}
+.skills{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #66BFBF;
+  font-weight: bold;
+}
+
+h3 {
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+hr {
+  border: 0;
+  border-style: none;
+  border-top:10px dotted #EAF6F6;
+  width: 10%;
+}
+
+.contact-me{
+  margin-top: 40px;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: white;
+  font-size: 20px;
+  background: #66bfbf;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.copy{
+  color: #EAF6F6;
+  font-size: 0.75rem;
 }
